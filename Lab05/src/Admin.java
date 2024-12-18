@@ -4,9 +4,13 @@ import java.util.Locale;
 public class Admin extends User
 {
 
-    public  Admin(String name , LocalDate dob )
+public Admin()
     {
-        super(name,dob);
+        super();
+    }
+    public  Admin(String name ,  int year, int month, int day )
+    {
+        super(name, year, month, day);
     }
         public void displayInfo()    //เเสดง
     {
