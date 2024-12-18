@@ -10,12 +10,11 @@ public class User
         this.name = null;
         this.dob= LocalDate.now();
     }
-    public  User(String name , LocalDate dob )
+    public  User(String name , int year, int month, int day)
     {
         this.name = name;
-        this.dob= dob;
+        this.dob= LocalDate.of(year,month, day);
     }
-
     public void displayInfo()    //เเสดง
     {
         System.out.println("Name :" +name);
